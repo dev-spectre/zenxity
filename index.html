@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenxity - Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-900">
+    <div class="relative min-h-screen w-full overflow-hidden bg-slate-900 text-white flex flex-col items-center justify-center p-4">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-br from-slate-900 via-gray-900 to-black"></div>
+        <div class="absolute top-1/4 left-1/4 h-96 w-96 bg-blue-900/40 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 h-96 w-96 bg-purple-900/40 rounded-full filter blur-3xl opacity-30 animate-pulse animation-delay-4000"></div>
+      </div>
+
+      <div class="relative z-10 flex flex-col items-center text-center max-w-3xl w-full">
+        <header class="mb-8">
+          <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+              Zenxity
+            </span>
+          </h1>
+        </header>
+
+        <main class="flex flex-col items-center w-full">
+          <p class="mt-2 text-2xl md:text-4xl font-light text-slate-200 tracking-wide">
+            Find Your Flow.
+          </p>
+          <h2 class="mt-4 text-4xl md:text-5xl font-bold text-slate-100">
+            Your AI-Powered Career Path Awaits.
+          </h2>
+          <p class="mt-8 max-w-2xl text-lg text-slate-400">
+            We're building the future of career discovery. Zenxity uses cutting-edge AI to understand your unique skills and aspirations, connecting you with opportunities you're truly passionate about.
+          </p>
+          <p class="mt-8 text-2xl font-semibold text-blue-300 animate-pulse">
+            COMING SOON
+          </p>
+          
+          <div id="form-wrapper" class="mt-10 w-full max-w-lg">
+            <p class="mb-4 text-slate-300">Be the first to know when we launch.</p>
+            <form id="subscription-form" class="w-full flex flex-col items-center">
+              <div class="relative w-full">
+                <input
+                  id="email-input"
+                  type="email"
+                  placeholder="Enter your email address"
+                  aria-label="Email address"
+                  class="w-full pl-4 pr-32 py-4 text-base bg-slate-800/50 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none focus:border-blue-500 transition-all duration-300 placeholder-slate-500 text-white disabled:opacity-50"
+                  required
+                />
+                <button
+                  id="submit-button"
+                  type="submit"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 h-12 px-6 flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-md hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-blue-500 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed group"
+                >
+                  <div id="button-content" class="flex items-center justify-center">
+                    <span>Notify Me</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                  </div>
+                  <div id="spinner" class="hidden">
+                    <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <p id="error-message" class="mt-2 text-sm text-red-400 h-5"></p>
+            </form>
+          </div>
+        </main>
+        
+        <footer class="mt-16 text-center text-slate-500">
+          <div class="flex justify-center space-x-6 mb-4">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Zenxity on Twitter" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Zenxity on LinkedIn" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93-.98 0-1.62.67-1.62 1.93V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.38.99 3.38 4.44z"></path>
+              </svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Zenxity on GitHub" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .268.18.578.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+          <p>&copy; 2024 Zenxity. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
