@@ -30,6 +30,10 @@ Open `index.html` in a browser. Deploy to GitHub Pages or any static host.
 └── CNAME                  # Custom domain config
 ```
 
+
+## Screenshots
+
+![screenshot](screenshots/home.png)
 ## License
 
 MIT
