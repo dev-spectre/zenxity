@@ -33,7 +33,7 @@ Open `index.html` in a browser. Deploy to GitHub Pages or any static host.
 
 ## Screenshots
 
-![screenshot](screenshots/home.png)
+![screenshot](screenshots/home.jpg)
 ## License
 
 MIT
